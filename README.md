@@ -27,7 +27,7 @@ If not, create such public/private keys: Open a terminal/shell and type:
 $ ssh-keygen -t rsa -C "your_email@example.com"
 Copy your public key (the contents of the newly-created id_rsa.pub file) into your clipboard. On a Mac, in the terminal/shell, type:
 
-$ pbcopy < ~/.ssh/id_rsa.pub
+$ cat ~/.ssh/id_rsa.pub >> pbcopy
 Paste your ssh public key into your github account settings.
 
 Go to your github Account Settings
