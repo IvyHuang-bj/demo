@@ -8,12 +8,14 @@ Set up git with your user name and email.
 Open a terminal/shell and type:
 
 $ git config --global user.name "Your name here"
+
 $ git config --global user.email "your_email@example.com"
 (Don’t type the $; that just indicates that you’re doing this at the command line.)
 
 I also do:
 
 $ git config --global color.ui true
+
 $ git config --global core.editor emacs
 The first of these will enable colored output in the terminal; the second tells git that you want to use emacs.
 
