@@ -1,4 +1,5 @@
 # First Time git user
+## #Set up of your git account
 If you’ve never used git or github before, there are a bunch of things that you need to do. It’s very well explained on github, but repeated here for completeness.
 
 Get a github account.
@@ -42,3 +43,27 @@ If it says something like the following, it worked:
 
 Hi username! You've successfully authenticated, but Github does
 not provide shell access.
+
+## When conflicts happens
+```
+$git stash save 
+```
+拉取远端代码。存在冲突，会报错。  
+此时我们需要将本地代码暂存起来 stash；  
+更新本地代码，将本地代码版本更新和远端的代码一致即可；  
+将暂存的代码合并到更新后的代码后，有冲突解决冲突(需要手动进行解决冲突)；  
+提交解决冲突后的代码。
+
+## Misc
+Ivy$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+#if you need the changes, git push to publish the local commits
+#if you don't need them, run $git reset --hard origin
+```
+$git reset --hard origin
+```
