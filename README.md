@@ -55,7 +55,7 @@ $git stash save
 提交解决冲突后的代码。
 
 ## Misc
-Ivy$ git status
+Ivy$ git status  
 On branch master
 Your branch is ahead of 'origin/master' by 2 commits.
   (use "git push" to publish your local commits)
