@@ -2,7 +2,7 @@
 ```
 quoted lines
 ```
-two space then press ENTER  
+two space then press **ENTER**  
 new line without an empty line
 
 markdown escape symbol: \
