@@ -1,4 +1,4 @@
-#head
+# head
 ```
 quoted lines
 ```
@@ -9,6 +9,6 @@ markdown escape symbol: \
 \<hello\>
 <hello>
   
-##Reference
-https://guides.github.com/features/mastering-markdown/#syntax
+## Reference
+https://guides.github.com/features/mastering-markdown/#syntax  
 https://help.github.com/cn/articles/basic-writing-and-formatting-syntax
