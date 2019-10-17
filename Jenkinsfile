@@ -13,9 +13,26 @@ pipeline {
                 echo 'Testing..'
             }
         }
-        stage('Deploy') {
+        stage('Deploy - dev') {
             steps {
                 echo 'Deploying....'
+                echo 'run unit tests'
+            }
+        }
+        stage('Deploy - Staging') {
+            steps {
+                /*
+                sh './deploy staging'
+                sh './run-smoke-tests'
+                */
+                echo 'deploy staging'
+                echo 'run smoke tests'
+                }
+        }
+        stage('Deploy - Production') {
+            steps {
+                //sh './deploy production'
+                echo 'deploy production'
             }
         }
     }
