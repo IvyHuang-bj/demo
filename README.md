@@ -67,6 +67,9 @@ $ git add -u
 $ git commit --ammend
  ```
 #back to work!
+```
+$ git stash pop
+```
 
 ## Misc
 Ivy$ git status  
