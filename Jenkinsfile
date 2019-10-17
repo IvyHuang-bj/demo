@@ -31,10 +31,14 @@ pipeline {
         }
         stage('Sanity check') {
             steps {
+                // Input Step
+                echo 'waiting for manually input'
+                timeout(time: 1, unit: "MINUTES") {
+                input message: 'Do you want to approve the deploy in production?', ok: 'Yes'
+}
                 /*
                 input "Does the staging environment look ok?"
                 */
-                echo 'waiting for manually input'
             }
         }
         stage('Deploy - Production') {
