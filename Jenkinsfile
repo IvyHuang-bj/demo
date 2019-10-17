@@ -29,6 +29,14 @@ pipeline {
                 echo 'run smoke tests'
                 }
         }
+        stage('Sanity check') {
+            steps {
+                /*
+                input "Does the staging environment look ok?"
+                */
+                echo 'waiting for manually input'
+            }
+        }
         stage('Deploy - Production') {
             steps {
                 //sh './deploy production'
