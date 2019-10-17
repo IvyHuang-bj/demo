@@ -45,14 +45,32 @@ Hi username! You've successfully authenticated, but Github does
 not provide shell access.
 
 ## When conflicts happens
-```
-$git stash save 
-```
+
 拉取远端代码。存在冲突，会报错。  
 此时我们需要将本地代码暂存起来 stash；  
 更新本地代码，将本地代码版本更新和远端的代码一致即可；  
 将暂存的代码合并到更新后的代码后，有冲突解决冲突(需要手动进行解决冲突)；  
 提交解决冲突后的代码。
+
+Assume the latest commit was already done
+start working on the next patch, and discovered I was missing something
+ 
+#stash away the current mess I made
+```
+$ git stash save
+```
+#some changes in the working dir
+ 
+#and now add them to the last commit:
+```
+$ git add -u
+$ git commit --ammend
+ ```
+#back to work!
+
+————————————————
+版权声明：本文为CSDN博主「琦彦」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/fly910905/article/details/88711075
 
 ## Misc
 Ivy$ git status  
